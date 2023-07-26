@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { useGLTF,Preload,OrbitControls } from '@react-three/drei'
 import CanvasLoader from '../components/Loader'
 function Mantette({isMobile}) {
-    const Manette=useGLTF('.../../public/3D/ps5/scene.gltf')
+    const Manette=useGLTF('.../../public/ps5/scene.gltf')
   return (
     <mesh>
         <hemisphereLight/>

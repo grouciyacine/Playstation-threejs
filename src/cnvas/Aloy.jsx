@@ -4,7 +4,7 @@ import { OrbitControls, Preload, SpotLight, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../components/Loader";
 
 function GOD({isMobile}) {
-  const PS5 = useGLTF("../../public/3D/god_of_war/scene.gltf");
+  const PS5 = useGLTF("../../public/god_of_war/scene.gltf");
   return (
     <mesh>
       <hemisphereLight />

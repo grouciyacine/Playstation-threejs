@@ -4,7 +4,7 @@ import { OrbitControls, Preload, SpotLight, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../components/Loader";
 
 function Console({isMobile}) {
-  const PS5 = useGLTF("../../public/3D/playstation_5/scene.gltf");
+  const PS5 = useGLTF("../../public/playstation_5/scene.gltf");
   return (
     <mesh>
       <hemisphereLight />
