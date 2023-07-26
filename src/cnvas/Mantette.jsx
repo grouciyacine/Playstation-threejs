@@ -1,6 +1,7 @@
 import React, { Suspense, useEffect, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { useGLTF,Preload,OrbitControls } from '@react-three/drei'
+import CanvasLoader from '../components/Loader'
 function Mantette({isMobile}) {
     const Manette=useGLTF('.../../public/3D/ps5/scene.gltf')
   return (
@@ -54,7 +55,7 @@ useEffect(() => {
         far:200,
         position:[-4,3,6]
     }}>
-        <Suspense>
+        <Suspense fallback={<CanvasLoader/>}>
             <OrbitControls
             autoRotate
             enableZoom={false}

@@ -1,6 +1,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, SpotLight, useGLTF } from "@react-three/drei";
+import CanvasLoader from "../components/Loader";
 
 function Console({isMobile}) {
   const PS5 = useGLTF("../../public/3D/playstation_5/scene.gltf");
@@ -46,7 +47,7 @@ const ConsoleCanvas = () => {
         position: [-4, 3, 6],
       }}
     >
-      <Suspense>
+      <Suspense fallback={<CanvasLoader/>}>
         <OrbitControls
           autoRotate
           enableZoom={false}
